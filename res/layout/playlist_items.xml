@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/stat"
+            android:layout_width="5dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="1dp" />
+
+        <TextView
+            android:id="@+id/song_of_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/stat"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/duration_of_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/song_of_playlist"
+            android:gravity="bottom|right"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#fbbb"
+            android:textIsSelectable="false"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/artist_of_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_of_playlist"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="#faaa"
+            android:textIsSelectable="false"
+            android:textSize="13sp" 
+            android:typeface="serif"/>
+
+        <TextView
+            android:id="@+id/album_of_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_of_playlist"
+            android:layout_toLeftOf="@id/duration_of_playlist"
+            android:layout_toRightOf="@id/artist_of_playlist"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="#faaa"
+            android:textIsSelectable="false"
+            android:textSize="13sp"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+</RelativeLayout>

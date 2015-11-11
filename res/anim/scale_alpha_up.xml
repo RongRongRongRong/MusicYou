@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator" >
+
+    <translate
+        android:duration="1500"
+        android:fromXDelta="0"
+        android:fromYDelta="-400"
+        android:toXDelta="0"
+        android:toYDelta="0" />
+
+    <alpha
+        android:duration="1500"
+        android:fromAlpha="0.5"
+        android:toAlpha="0.9" />
+
+    <scale
+        android:duration="1500"
+        android:fromXScale="0.2"
+        android:fromYScale="0.2"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1"
+        android:toYScale="1" />
+
+    <!--
+         <rotate  
+        android:duration="1000"  
+        android:fromDegrees="0"  
+        android:repeatCount="1"  
+        android:repeatMode="reverse"  
+        android:toDegrees="360" />
+    -->
+
+</set>
